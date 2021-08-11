@@ -53,7 +53,7 @@ class _HotNewsState extends State<HotNews> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'No more news',
+              'No hot news found',
               style: TextStyle(color: Colors.black45),
             ),
           ],
