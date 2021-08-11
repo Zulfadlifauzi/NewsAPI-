@@ -116,7 +116,7 @@ class _SourceDetailState extends State<SourceDetail> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [Text('No News..')],
+          children: [Text('No Article..')],
         ),
       );
     } else {
