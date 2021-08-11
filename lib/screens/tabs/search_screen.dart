@@ -7,7 +7,6 @@ import 'package:firstapp/model/article_response.dart';
 import 'package:flutter/material.dart';
 import 'package:firstapp/style/theme.dart' as Style;
 import 'package:timeago/timeago.dart' as timeago;
-
 import '../news_detail.dart';
 
 class SeacrhScreen extends StatefulWidget {

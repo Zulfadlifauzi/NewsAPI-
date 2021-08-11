@@ -21,6 +21,7 @@ class _NewsDetailState extends State<NewsDetail> {
       bottomNavigationBar: GestureDetector(
         onTap: () {
           launch(article.url!);
+
         },
         child: Container(
           height: 48.0,
