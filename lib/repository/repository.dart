@@ -4,8 +4,8 @@ import 'package:firstapp/model/source_response.dart';
 import 'dart:async';
 
 class NewsRepository {
-  static String mainUrl = 'https://newsapi.org/v2/';
-  final String apiKey = 'b9402defd3c44083bcb3927f205aa64e';
+  static String? mainUrl = 'https://newsapi.org/v2/';
+  final String? apiKey = 'bd60c3e4ddc14ee6bb9e422dfba9dc86';
   final Dio _dio = Dio();
 
   var getSourcesUrl = '$mainUrl/sources';
@@ -13,7 +13,7 @@ class NewsRepository {
   var everythingUrl = '$mainUrl/everything';
 
   Future<SourceResponse> getSources() async {
-    var params = {'apiKey': apiKey, 'language': 'en', 'country': 'en'};
+    var params = {'apiKey': apiKey, 'language': 'en', 'country': 'us'};
     try {
       Response response =
           await _dio.get(getSourcesUrl, queryParameters: params);
@@ -27,7 +27,7 @@ class NewsRepository {
   Future<ArticleResponse> getTopHeadlines() async {
     var params = {
       'apiKey': apiKey,
-      'country': 'en',
+      'country': 'us',
     };
     try {
       Response response =

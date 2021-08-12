@@ -80,7 +80,7 @@ class _SourceScreenState extends State<SourceScreen> {
                         width: 60.0,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assets/logo/${sources[index].id}.png'),
+                            image: AssetImage('assets/logos/${sources[index].id}.png'),
                             fit: BoxFit.cover
                           )
                         ),

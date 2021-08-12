@@ -20,8 +20,7 @@ class _NewsDetailState extends State<NewsDetail> {
     return Scaffold(
       bottomNavigationBar: GestureDetector(
         onTap: () {
-          launch(article.url!);
-
+          launch(article.url == null ? '' : article.url!);
         },
         child: Container(
           height: 48.0,
@@ -56,7 +55,7 @@ class _NewsDetailState extends State<NewsDetail> {
             aspectRatio: 16 / 9,
             child: FadeInImage.assetNetwork(
                 placeholder: 'assets/img/placeholder.jpg',
-                image: article.img!,
+                image: article.img == null ? '' : article.img!,
                 fit: BoxFit.cover),
           ),
           Container(
